@@ -2,7 +2,7 @@
 ## What is a Cellular Automata?
 In short, a cellular automata is a zero-player game that progresses indefiantly. A 1-D cellular automata slowly grows with time, and all of the previous generations are typically displayed at once (usually creating a triangle-like figure). A 2-D cellular automata usually remains the same size, and each iteration is displayed over the previous one. The most famous example of a 2-D cellular automta is Conways Game of Life, which is certain set of rules that allows for a balanced ending. Every pixel in a cellular automata updates with respect the the pixels, given a set of rules. For example, in Conways Game of Life, a populated cell will remain populated iff there are two or three populated cells surrounding it. An unpopulated cell will become populated iff there are three populated cells surrounding it. 
 
-NOTE: I commented out the jit decorates, but if the numba library is installed then this can be undone.
+NOTE: I commented out the @jit() decorators, but if the numba library is installed then this can be undone.
 
 # 1-D Cellular Automatas
 ## CellularAutomata.py

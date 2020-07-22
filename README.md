@@ -1,6 +1,6 @@
 # Cellular-Automata
 ## What is a Cellular Automata?
-In short, a cellular automata is a zero-player game that progresses indefiantly. A 1-D cellular automata slowly grows with time, and all of the previous generations are typically displayed at once (usually creating a triangle-like figure). A 2-D cellular automata usually remains the same size, and each iteration is displayed over the previous one. The most famous example of a 2-D cellular automta is Conways Game of Life, which is certain set of rules that allows for a balanced ending. Every pixel in a cellular automata updates with respect the the pixels, given a set of rules. For example, in Conways Game of Life, a populated cell will remain populated iff there are two or three populated cells surrounding it. An unpopulated cell will become populated iff there are three populated cells surrounding it. 
+In short, a cellular automata is a zero-player game that progresses indefiantly. A 1-D cellular automata slowly grows with each iteration, and all of the previous generations are typically displayed at once (usually creating a triangle-like figure). A 2-D cellular automata usually remains the same size, and each iteration is displayed over the previous one. The most famous example of a 2-D cellular automta is Conways Game of Life, which is certain set of rules that allows for a balanced ending. Every pixel in a cellular automata updates with respect the the pixels, given a set of rules. For example, in Conways Game of Life, a populated cell will remain populated iff there are two or three populated cells surrounding it. An unpopulated cell will become populated iff there are three populated cells surrounding it. 
 
 NOTE: I commented out the @jit() decorators, but if the numba library is installed then this can be undone.
 
@@ -38,7 +38,7 @@ A slightly more complicated cellular automata. This one can have anywhere from t
  **unpop_criteria** - criteria for unpopulated cells to progress        (Default is 3, Conways Game of Life)
  
  ## Musical Game of Life
- A 2-D cellular automata the is set to the parameters of Conways Game of Life, but the ouput is a mix of sinwaves from the first 5 octaves instead of a plot showing the populated and unpoulated values. Each generation is converted to audio, passed through a hanning window, then added to a running sum of each generation. The hanning windows are overlapped to eliminate clipping sounds due to the Gibbs effect. 
+ A 2-D cellular automata the is set to the parameters of Conways Game of Life, but the ouput is a mix of sinwaves from the first 5 octaves instead of a plot showing the populated and unpopulated values. Each generation is converted to audio, passed through a hanning window, then added to a running sum of each generation. The hanning windows are overlapped to eliminate clipping sounds due to the Gibbs effect. 
 ### Adjustable Parameters
  **iterations** - the number of iterations to go through                (Default is 500)
  

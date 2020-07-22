@@ -7,13 +7,13 @@ NOTE: I commented out the jit decorates, but if the numba library is installed t
 # 1-D Cellular Automatas
 ## CellularAutomata.py
 A basic, 1-D cellular Automata.
-#### Adjustable Parameters
+### Adjustable Parameters
 **rule_num** - Which rule to follow                     (Default is 30, because it is the coolest)
 **iterations** - The number of iterations to display    (Default is 100)
 
 ## Multicolor Cellular Automata
 A slightly more complicated cellular automata. This one can have anywhere from two (the basic) to 38 colors. The total number of combinations is equal to (number of colors)^8.
-#### Adjsutable Parameters
+### Adjsutable Parameters
 **colors** - The numbers of colors to display           (Default is two, the simplest)
 **rule_num** - Which rule to follow                     (Default is 30, because it is the coolest)
 **iterations** - The number of iterations to display    (Default is 100)
@@ -21,7 +21,7 @@ A slightly more complicated cellular automata. This one can have anywhere from t
 # 2-D Cellular Automatas
  ## 2D Cellular Automata.py
  A simple 2-D cellular automata that progresses with time based on the populated and unpopulated criteria. The values that these parameters are set to will dictate which cells continue/become populated in the next generation.
- #### Adjustable Parameters
+ ### Adjustable Parameters
  **iterations** - the number of iterations to go through                (Default is 500)
  **height** - the height of the game board                              (Default is 200)
  **width** - the width of the game board                                (Default is 200)
@@ -31,7 +31,7 @@ A slightly more complicated cellular automata. This one can have anywhere from t
  
  ## Musical Game of Life
  A 2-D cellular automata the is set to the parameters of Conways Game of Life, but the ouput is a mix of sinwaves from the first 5 octaves instead of a plot showing the populated and unpoulated values. Each generation is converted to audio, passed through a hanning window, then added to a running sum of each generation. The hanning windows are overlapped to eliminate clipping sounds due to the Gibbs effect. 
-#### Adjustable Parameters
+### Adjustable Parameters
  **iterations** - the number of iterations to go through                (Default is 500)
 **line_length** - the width of the "game board"                         (Default is 10)
 **lines_per_note** - the number of lines each note consists of          (Default is 1)

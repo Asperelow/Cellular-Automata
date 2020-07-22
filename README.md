@@ -9,13 +9,16 @@ NOTE: I commented out the jit decorates, but if the numba library is installed t
 A basic, 1-D cellular Automata.
 ### Adjustable Parameters
 **rule_num** - Which rule to follow                     (Default is 30, because it is the coolest)
+
 **iterations** - The number of iterations to display    (Default is 100)
 
 ## Multicolor Cellular Automata
 A slightly more complicated cellular automata. This one can have anywhere from two (the basic) to 38 colors. The total number of combinations is equal to (number of colors)^8.
 ### Adjsutable Parameters
 **colors** - The numbers of colors to display           (Default is two, the simplest)
+
 **rule_num** - Which rule to follow                     (Default is 30, because it is the coolest)
+
 **iterations** - The number of iterations to display    (Default is 100)
 
 # 2-D Cellular Automatas
